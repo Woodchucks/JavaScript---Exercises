@@ -1,7 +1,8 @@
 // Write a function called extractValue which accepts an array of objects and a key and returns a new array with the value of each object at the key.
 function extraValue(arr, key){
   return arr.reduce(function(acumulator, nextValue){
-    return acumulator.push(nextValue[key]);
+    acumulator.push(nextValue[key]);
+    return acumulator;
   },[]);
 }
 
